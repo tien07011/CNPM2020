@@ -1,0 +1,193 @@
+html {
+    /*background*/
+    background: url("../picture/background.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#game {
+    /*màn hình trắng chơi game*/
+    z-index: 2px;
+    position: relative;
+    margin: 15px auto 20px;
+    width: 960px;
+    min-height: 600px;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.head {
+    /*đầu màn hình game*/
+    border-bottom: 1px solid black;
+    line-height: 53px;
+    position: relative;
+    padding: 0px 20px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.head a {
+    /* nút menu và Back */
+    text-decoration: none;
+    color: #28AFB8;
+}
+
+.head a:hover {
+    color: #1E66D6;
+}
+
+.progress-bar {
+    /*thanh tính điểm*/
+    font-size: 14px;
+    text-align: center;
+    margin-top: -54px;
+    padding: 0 80px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+}
+
+.back-link {
+    /*nút quay lai*/
+    font-size: 20px;
+    text-decoration: none;
+}
+
+img {
+    /*nut start*/
+    margin-top: 50px;
+    margin-left: 355px;
+}
+
+.number_progress {
+    margin: auto;
+    width: 465px;
+    height: 26px;
+    border-radius: 16px;
+    background: #EDEDED;
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.22), inset 0px 1px 3px 0px rgba(0, 0, 0, 0.18);
+    position: relative;
+}
+
+.number_progress i {
+    /* tạo quả bóng*/
+    display: block;
+    width: 21px;
+    height: 21px;
+    border-radius: 10px;
+    background-image: url(https://content.dragonlearn.in/fp/97/fat_player/components/progress/beads/v1/img/bead-874cc643b18fbe33aacee82d8f4353eec013afca7486232ce8e36adbbae9eeb6.png);
+    position: absolute;
+    top: 3px;
+}
+
+#playscreen {
+    opacity: 0.2;
+    position: absolute;
+}
+
+#img_box1 {
+    position: absolute;
+    width: 360px;
+    height: 260px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#img_box3 {
+    position: absolute;
+    width: 360px;
+    height: 260px;
+    margin-left: 50px;
+    margin-top: 10px;
+    opacity: 0;
+}
+
+#img_box5 {
+    position: absolute;
+    width: 360px;
+    height: 260px;
+    margin-left: 50px;
+    margin-top: 10px;
+    opacity: 0;
+}
+
+#img_box7 {
+    position: absolute;
+    width: 360px;
+    height: 260px;
+    margin-left: 50px;
+    margin-top: 10px;
+    opacity: 0;
+}
+
+#img_box2 {
+    position: absolute;
+    width: 360px;
+    height: 260px;
+    margin-left: 550px;
+    margin-top: 10px;
+}
+
+#img_box4 {
+    position: absolute;
+    width: 360px;
+    height: 260px;
+    margin-left: 550px;
+    margin-top: 10px;
+    opacity: 0;
+}
+
+#img_box6 {
+    position: absolute;
+    width: 360px;
+    height: 260px;
+    margin-left: 550px;
+    margin-top: 10px;
+    opacity: 0;
+    ;
+}
+
+#img_box8 {
+    position: absolute;
+    width: 360px;
+    height: 260px;
+    margin-left: 550px;
+    margin-top: 10px;
+    opacity: 0;
+}
+
+#start_img {
+    /* nut start*/
+    position: relative;
+    z-index: 100;
+    border: 35px solid #FBF4F4;
+    cursor: pointer;
+    opacity: 0.8;
+    top: 120px;
+    left: -2px;
+}
+
+#start_img:hover {
+    /* nut start*/
+    transition-duration: 0.5s;
+    width: 200px;
+    height: 200px;
+    top: 110px;
+    left: -12px;
+    transition-timing-function: ease;
+}
+
+.choice {
+    /*nút chọn đáp án*/
+    background: #fff;
+    border: 2px solid #bfbfbf;
+    border-radius: 9px;
+    position: relative;
+    top: 115px;
+    left: 450px;
+    width: 55px;
+    height: 150px;
+}

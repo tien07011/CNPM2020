@@ -1,0 +1,82 @@
+body {
+	font-family: Helvetica Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-weight: 200;
+	color: #333;
+	line-height: 1.25;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#container{
+	padding-left: 275px;
+	position: relative;
+	left: 0;
+	width:auto;
+}
+
+#menu{ /*taọ menu*/
+	left: 0;
+	position: absolute;
+	padding-left: 30px;
+	padding-top: 100px;
+}
+
+#menu ul {
+    background: #7ACAE6;
+    width: 275px;
+    padding: 0;
+    list-style-type: none;
+	z-index: 20px;
+	border: solid 1px #969393;
+	box-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.2), 2px 10px 20px 1px rgba(0, 0, 0, 0.19);
+}
+
+#menu ul li {
+    width: auto;
+    height: 55px;
+    line-height: 55px;
+    border-bottom: 1px solid #F8F2F2;
+    padding: 0 1em;
+    position: relative;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+}
+
+#menu ul li:hover {
+    background: #E29A9A;
+}
+
+/* content*/
+#content{ /* chia ô */
+	padding: 50px;
+}
+#header{
+	text-align: center;
+}
+.row{
+	overflow: auto;
+	padding: 30px 20px;
+}
+.row .col{
+	float: left;
+	width: 20%;
+	margin-right: 3%;
+}
+p{
+	text-align: center;
+}
+
+.col a {
+	text-decoration: none;
+	color: #333;
+}
+.col a:hover{
+	color: #C72A2D;
+}
+
