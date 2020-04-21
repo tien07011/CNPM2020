@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Compare the number of blocks and write the numbers</title>
+    <link rel="stylesheet" type="text/css" href="game1.css">
+</head>
+
+<body>
+    <div id="game">
+        <div class="head">
+            <a class="back-link" style href="../game1/Mainmenu.html">Back</a>
+            <!-- nút quay lại -->
+            <div class="head_right">
+                <!-- ngôn ngữ -->
+            </div>
+            <div class="progress-bar">
+                <div id="progress">
+                    <div class="number_progress">
+                        <i class="ball" id="bead0" style="left: 4px;"></i>
+                        <i class="ball" id="bead1" style="left: 28px;"></i>
+                        <i class="ball" id="bead2" style="left: 52px;"></i>
+                        <i class="ball" id="bead3" style="left: 76px;"></i>
+                        <i class="ball" id="bead4" style="left: 100px;"></i>
+                        <i class="ball" id="bead5" style="left: 124px;"></i>
+                        <i class="ball" id="bead6" style="left: 148px;"></i>
+                        <i class="ball" id="bead7" style="left: 172px;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="start">
+            <div id="start_button" style="position: absolute">
+                <img id="start_img" onClick="start()" src="../picture/Play.png" width="180px" height="180px" style="border-radius: 180px" draggable="false">
+            </div>
+        </div>
+        <!-- end head  -->
+        <div id="playscreen">
+            <p style="font-size: 40px;text-align: center;margin-top: 5px;margin-left: 80px; margin-bottom: 5px;">Compare the total number of blocks oneach side:</p>
+            <div class="question_box">
+                <img id="img_box1" src="../picture/dis1.png">
+                <img id="img_box2" src="../picture/dis2.png">
+            </div>
+            <!-- ảnh các ô vuông -->
+            <div class="input">
+                <div class="choice">
+                    <!--nút chọn đáp án-->
+                    <a href="ketthuc.html">
+                        <img id="greater8" onmouseover="bigGreater(this)" onmouseout="normalGreater(this)" href="ketthuc.html" src="../picture/greater.png" style="position: absolute; left: -350px; top: -45px; cursor: pointer;">
+                    </a>
+                    <img id="equal8" onmouseover="bigEqual(this)" onmouseout="normalEqual(this)" src="../picture/equal.png" style="position: absolute; left: -350px; top: 5px; cursor: pointer;">
+                    <img id="less8" onmouseover="bigLess(this)" onmouseout="normalLess(this)" src="../picture/less.png" style="position: absolute; left: -350px; top: 53px; cursor: pointer;">
+                    <img id="greater7" onmouseover="bigGreater(this)" onmouseout="normalGreater(this)" src="../picture/greater.png" style="position: absolute; left: -350px; top: -45px; cursor: pointer;">
+                    <img id="equal7" onmouseover="bigEqual(this)" onmouseout="normalEqual(this)" src="../picture/equal.png" style="position: absolute; left: -350px; top: 5px; cursor: pointer;">
+                    <img id="less7" onmouseover="bigLess(this)" onmouseout="normalLess(this)" src="../picture/less.png" style="position: absolute; left: -350px; top: 53px; cursor: pointer;">
+                    <img id="greater6" onmouseover="bigGreater(this)" onmouseout="normalGreater(this)" src="../picture/greater.png" style="position: absolute; left: -350px; top: -45px; cursor: pointer;">
+                    <img id="equal6" onmouseover="bigEqual(this)" onmouseout="normalEqual(this)" src="../picture/equal.png" style="position: absolute; left: -350px; top: 5px; cursor: pointer;">
+                    <img id="less6" onmouseover="bigLess(this)" onmouseout="normalLess(this)" src="../picture/less.png" style="position: absolute; left: -350px; top: 53px; cursor: pointer;">
+                    <img id="greater5" onmouseover="bigGreater(this)" onmouseout="normalGreater(this)" src="../picture/greater.png" style="position: absolute; left: -350px; top: -45px; cursor: pointer;">
+                    <img id="equal5" onmouseover="bigEqual(this)" onmouseout="normalEqual(this)" src="../picture/equal.png" style="position: absolute; left: -350px; top: 5px; cursor: pointer;">
+                    <img id="less5" onmouseover="bigLess(this)" onmouseout="normalLess(this)" src="../picture/less.png" style="position: absolute; left: -350px; top: 53px; cursor: pointer;">
+                    <img id="greater4" onmouseover="bigGreater(this)" onmouseout="normalGreater(this)" src="../picture/greater.png" style="position: absolute; left: -350px; top: -45px; cursor: pointer;">
+                    <img id="equal4" onmouseover="bigEqual(this)" onmouseout="normalEqual(this)" src="../picture/equal.png" style="position: absolute; left: -350px; top: 5px; cursor: pointer;">
+                    <img id="less4" onmouseover="bigLess(this)" onmouseout="normalLess(this)" src="../picture/less.png" style="position: absolute; left: -350px; top: 53px; cursor: pointer;">
+                    <img id="greater3" onmouseover="bigGreater(this)" onmouseout="normalGreater(this)" src="../picture/greater.png" style="position: absolute; left: -350px; top: -45px; cursor: pointer;">
+                    <img id="equal3" onmouseover="bigEqual(this)" onmouseout="normalEqual(this)" src="../picture/equal.png" style="position: absolute; left: -350px; top: 5px; cursor: pointer;">
+                    <img id="less3" onmouseover="bigLess(this)" onmouseout="normalLess(this)" src="../picture/less.png" style="position: absolute; left: -350px; top: 53px; cursor: pointer;">
+                    <img id="greater2" onmouseover="bigGreater(this)" onmouseout="normalGreater(this)" src="../picture/greater.png" style="position: absolute; left: -350px; top: -45px; cursor: pointer;">
+                    <img id="equal2" onmouseover="bigEqual(this)" onmouseout="normalEqual(this)" src="../picture/equal.png" style="position: absolute; left: -350px; top: 5px; cursor: pointer;">
+                    <img id="less2" onmouseover="bigLess(this)" onmouseout="normalLess(this)" src="../picture/less.png" style="position: absolute; left: -350px; top: 53px; cursor: pointer;">
+                    <img id="greater1" onmouseover="bigGreater(this)" onmouseout="normalGreater(this)" src="../picture/greater.png" style="position: absolute; left: -350px; top: -45px; cursor: pointer;">
+                    <img id="equal1" onmouseover="bigEqual(this)" onmouseout="normalEqual(this)" src="../picture/equal.png" style="position: absolute; left: -350px; top: 5px; cursor: pointer;">
+                    <img id="less1" onmouseover="bigLess(this)" onmouseout="normalLess(this)" src="../picture/less.png" style="position: absolute; left: -350px; top: 53px; cursor: pointer;">
+                </div>
+            </div>
+            <div id="note" style="position: relative;">
+                <p id="left" style="left: 150px; position: absolute; top: 120px; font-size: 35px"></p>
+                <p id="right" style="left: 650px; position: absolute; top: 120px; font-size: 35px;"></p>
+                <p id="center" style="left: 420px; top: 120px; position: absolute; font-size: 35px;"></p>
+            </div>
+        </div>
+        <!-- nut start -->
+        <div id="go_to_lesson"></div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="java.js"></script>
+</body>
+
+</html>
